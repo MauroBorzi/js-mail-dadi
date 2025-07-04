@@ -19,3 +19,21 @@ console.log(`Email valida. L'utente potrà prendere parte all'evento.`)
     console.log(`Email non valida. L'utente non potrà prendere parte all'evento.`)
   }
 }
+
+
+console.log('-----dadi-----')
+
+// dichiarazioni variabili
+ const randomPcNumber = Math.floor(Math.random() * 6) +1
+ const randomUserNumber = Math.floor(Math.random() * 6) +1
+
+//  regole per determinare il vincitore del lancio
+if(randomPcNumber>randomUserNumber){
+  console.log(`Pc fa ${randomPcNumber}. Utente fa ${randomUserNumber}. Vince Pc.`)
+} 
+else if(randomPcNumber<randomUserNumber){
+console.log(`Pc fa ${randomPcNumber}. Utente fa ${randomUserNumber}. Vince Utente.`)
+}
+else{
+  console.log(`Pc fa ${randomPcNumber}. Utente fa ${randomUserNumber}. Pareggio.`)
+}
